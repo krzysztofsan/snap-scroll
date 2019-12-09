@@ -1,0 +1,14 @@
+.container {
+  height: 500px;
+  background-color: white;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  background-color: #dddddd;
+  height: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  scroll-snap-align: start none;
+}
