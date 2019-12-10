@@ -1,14 +1,47 @@
+@-webkit-keyframes BackgroundGradient {
+  0%{background-position:0% 52%}
+  50%{background-position:100% 49%}
+  100%{background-position:0% 52%}
+}
+@-moz-keyframes BackgroundGradient {
+  0%{background-position:0% 52%}
+  50%{background-position:100% 49%}
+  100%{background-position:0% 52%}
+}
+@keyframes BackgroundGradient {
+  0%{background-position:0% 52%}
+  50%{background-position:100% 49%}
+  100%{background-position:0% 52%}
+}
+
+:root {
+  --space-base: 20px;
+}
+
+body {
+  background: linear-gradient(141deg, #e8882b, #78bdec);
+  background-size: 400% 400%;
+  
+  -webkit-animation: BackgroundGradient 30s ease infinite;
+  -moz-animation: BackgroundGradient 30s ease infinite;
+  animation: BackgroundGradient 30s ease infinite;
+}
+
 .container {
-  height: 500px;
-  background-color: white;
+  height: calc(100vh - 2 * var(--space-base));
+  margin: var(--space-base);
+  background-color: transparent;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 .section {
   background-color: #dddddd;
-  height: 300px;
+  height: calc(100%);
   padding: 10px;
   margin-bottom: 20px;
   scroll-snap-align: start none;
+
+  /* Forces page by page scroll */
+  scroll-snap-stop: always;
 }
