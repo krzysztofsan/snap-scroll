@@ -27,7 +27,7 @@ body {
   animation: BackgroundGradient 30s ease infinite;
 }
 
-.container {
+#container {
   height: calc(100vh - 2 * var(--space-base));
   margin: var(--space-base);
   background-color: transparent;
@@ -40,8 +40,14 @@ body {
   height: calc(100%);
   padding: 10px;
   margin-bottom: 20px;
-  scroll-snap-align: start none;
+ 
+  opacity: 0;
+  transition: opacity 200ms ease-in;
 
-  /* Forces page by page scroll */
+  scroll-snap-align: start none; 
   scroll-snap-stop: always;
+}
+
+.section.visible {
+  opacity: 1;
 }
