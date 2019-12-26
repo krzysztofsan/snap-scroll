@@ -1,0 +1,17 @@
+{
+  "name": "snap-scroll",
+  "version": "1.0.0",
+  "description": "Snap scroll playground",
+  "author": "Krzysztof Woliński",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bodziowagh/snap-scroll.git"
+  },
+  "devDependencies": {
+    "serve": "11.2.0"
+  },
+  "scripts": {
+    "start": "serve src"
+  }
+}

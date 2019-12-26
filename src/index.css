@@ -19,6 +19,7 @@
 }
 
 body {
+  margin: 0;
   background: linear-gradient(141deg, #e8882b, #78bdec);
   background-size: 400% 400%;
   
